@@ -55,5 +55,16 @@
     <td>20 Hours</td>
 </tr>
 </table>
+<h4>Code Sniffet</h4><hr>
+<p>Link to <a href="https://stackoverflow.com/questions/5131158/ipad-iphone-browser-sniffer-with-mod-rewrite-and-redirection-too-many-redirect">Stackoverflow</a></p>
+<blockquote>
+    <q>htaccess :iPad/iPhone browser sniffer with mod_rewrite and redirection; "too many redirections"</q>
+    
+</blockquote>
+<pre>
+    RewriteCond %{HTTP_USER_AGENT} ^.*iPad.*$
+RewriteRule ^(.*)$ http://ipad.yourdomain.com [R=301]
+</pre>
+
 </body>
 </html>
